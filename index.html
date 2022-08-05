@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Christine Bains Portfolio</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="scripts/quotes.js"></script>
+</head>
+
+<body>
+
+    <div class="topBorder"> <img src="images/paint-header.png" alt="paint border"> </div>
+
+<!-- Header bar with navigation links -->
+    <header>
+        <div id="navback">
+            <nav id="navbar">
+                <div id="logo-div">
+                    <a href="#">
+                        <img class="logo" src="images/personallogo_blue.png" alt="personal logo">
+                    </a>
+                </div>
+                <ul class="nav-list">
+                    <li class="list-items" href="javascript:void(0)"><a href="#">About</a></li>
+                    <li class="list-items" href="javascript:void(0)"><a href="#">Work</a></li>
+                    <li class="list-items" href="javascript:void(0)"><a href="#">Resume</a></li>
+                </ul>
+                <div>
+                    <button id="nav-button" class="contact" role="button">Let's Talk!</button>
+                </div>
+            </nav>
+            
+        <script>
+            window.onscroll = function() {myFunction()};
+            
+            var navback = document.getElementById("navback");
+            var sticky = navback.offsetTop;
+            
+            function myFunction() {
+              if (window.pageYOffset >= sticky) {
+                navback.classList.add("sticky")
+              } else {
+                navback.classList.remove("sticky");
+              }
+            }
+            </script>
+        </div> 
+    </header>
+
+    <!-- Hero section with social links -->
+    <section class="hero-flex">
+        <div id="hero-left">
+            <h1>Hi, I'm Christine.</h1>
+            <div class="subhead-flex">
+                <h2 class="subheader">UX Designer</h2>
+                <img class="blast" src="images/blast-icon.png" alt="blast icon">
+                <h2 class="subheader">Developer</h2>
+                <img class="blast" src="images/blast-icon.png" alt="blast icon">
+                <h2 class="subheader">Storyteller</h2>
+            </div>
+            <p id="execSummary">I believe in holistic design. Using a trans-disciplinary approach, I am able to leave behind the confines of conventional methods by combining UX principles with years of experience in Product Marketing, Communication Strategy, and Brand Management.</p>
+            <div class="socialBar">
+                <button class="contact">Let's Talk!</button>
+                <img class="socialIcons" src="images/behance.svg" alt="behance">
+                <img class="socialIcons linkedin" src="images/linkedin.svg" alt="linkedin">
+                <img class="socialIcons" src="images/envelope.svg" alt="email">
+            </div>
+        </div>
+        <div id="hero-right">
+            <img src="images/hero-photo.jpg" alt="my photo">
+        </div>
+    </section>
+
+    <hr class="skills-line">
+
+    <!-- Skills Section -->
+    <section class="skillsSection">
+        <h2>Let's talk skillset</h2>
+        <div class="skillsSubsection">
+            <p id="skillsPara">I am currently on a never-ending path of discovery, ranging from UX/UI design, illustration and product consulting.</p>
+            <img id="left-arrow" src="images/polygon-leftfade.png" alt="left arrow">
+            <img id="right-arrow" src="images/polygon-right.png" alt="right arrow">
+        </div>
+        <div class="skillsBoxes">
+            <div id="languages" class="skillBox">
+                <h3>Programming Languages</h3>
+                <ol>
+                    <ul>HTML5</ul>
+                    <ul>CSS3</ul>
+                    <ul>Javascript</ul>
+                    <ul>C++</ul>
+                </ol>
+            </div>
+            <div id="software" class="skillBox">
+                <h3>Essential Software</h3>
+                <ol>
+                    <ul>Adobe Suite</ul>
+                    <ul>Figma</ul>
+                    <ul>Balsalmiq</ul>
+                    <ul>Brackets</ul>
+                    <ul>Microsoft Office Suite</ul>
+                    <ul>Sketch</ul>
+                    <ul>Github</ul>
+                    <ul>Miro</ul>
+                    <ul>Tableau</ul>
+                </ol>
+            </div>
+            <div id="design" class="skillBox">
+                <h3>Media Skills</h3>
+                <ol>
+                    <ul>Page Layout & Composition</ul>
+                    <ul>Icon & Pixel-level Design</ul>
+                    <ul>Commercial Print</ul>
+                    <ul>Typography</ul>
+                    <ul>Color Theory</ul>
+                    <ul>Rapid Prototyping</ul>
+                    <ul>Multi-device Design</ul>
+                    <ul>Contextual Design</ul>
+                </ol>
+            </div>
+            <div id="business" class="skillBox">
+                <h3>Business & Social Sciences Skills</h3>
+                <ol>
+                    <ul>Business Metrics & Analytics</ul>
+                    <ul>Content Management</ul>
+                    <ul>Data Visualization</ul>
+                    <ul>Corporate Communications & Branding</ul>
+                    <ul>Project & Client Management</ul>
+                    <ul>Business Writing</ul>
+                    <ul>Cognitive Psychology</ul>
+                    <ul>Persona Creation</ul>
+                </ol>
+            </div>
+        </div>
+    </section>
+
+    <!-- Selected Work Section -->
+    <div class="workSection">
+        <h2>Selected Work</h2>
+        <p id="workPara">Probably the section you are most interested in. Have fun exploring some of my recent projects and maybe come back afterwards?</p>
+        <div class="projectGroup">
+            <div class="individualProject">
+                <div class="projectLeft"><img src="images/casestudy1.webp" alt="Case Study 1"></div>
+                <div class="projectRight">
+                    <h3>Safetrek Mobile Travel Application</h3>
+                    <p>The creation of a singular platform that responds to the shifts in mindsets brought about by the COVID19 Pandemic by saving users time and providing them with the security they need to travel at ease. </p>
+                    <button class="projectButton"> Learn More</button>
+                </div>
+            </div>
+            <div class="individualProject">
+                <div class="projectLeft"><img src="images/casestudy2.webp" alt="Case Study 2"></div>
+                <div class="projectRight">
+                    <h3>Department of the Interior Website Redesign</h3>
+                    <p>Research was conducted on UI pain points that users experience when visiting the DOI website and then synthesized into a meaningful redesign for increased website usability.</p>
+                    <button class="projectButton"> Learn More</button>
+                </div>
+            </div>
+            <div class="individualProject">
+                <div class="projectLeft"><img src="images/casestudy3.jpeg" alt="Case Study 3"></div>
+                <div class="projectRight">
+                    <h3>Real Investor (RI) Mobile Investment Application</h3>
+                    <p>A solution for investors to quickly discover and understand the investment potentials for different real estate opportunities so that they can act quickly when a good opportunity hits the market.</p>
+                    <button class="projectButton"> Learn More</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Quotes Section -->
+    <section class="quotesSection">
+        <div class="slideshowContainer">
+            
+            <!-- Full-width slides/quotes -->
+            <div id="first-quote" class="myQuotes">
+                <h2>LinkedIn Recommendations</h2>
+                <q>Christine was an incredible partner for me, as she developed the overall Communication Strategy for the company and for my own personal efforts. I found her to be strategic, bright, collaborative and she worked with a high sense of professionalism and urgency. She is a true asset to any organization! </q>
+                <p class="author">- Paul, President & CEO at Another Broken Egg Cafe</p>
+            </div>
+
+            <div class="myQuotes">
+                <h2>LinkedIn Recommendations</h2>
+                <q>It has been an absolute pleasure working with Christine. During her tenure Christine played an intricate role in creating and executing our communications and learning strategy. Highlights of her contributions include: new technology she introduced to the company, moving our email design to the 21st century through the use of multi-device adaptive HTML. In addition, Christine led the content development for our 2019 global Association for Talent Development BEST award. Christine also developed the branding concepts for our annual franchise conference in addition to numerous engaging learning experiences for over 7500 colleagues. Christine is an exceptional talent with a collaborative spirit and would be an asset to any organization.</q>
+                <p class="author">- Catherine, Vice President at Cox Media Group</p>
+            </div>
+
+            <div class="myQuotes">
+                <h2>LinkedIn Recommendations</h2>
+                <q>Christine is an outstanding, multi-skilled professional and I highly recommend her to any team in need! During her time with Krystal, Christine developed and led the company's internal communications strategy which resulted in increased productivity across departments through streamlined, targeted communications that reduced redundancy and misinformation. 
+
+                Her hard work and excellent writing skills helped the company to achieve award-winning status with the Association of Talent Development. 
+                    
+                Christine utilized her tech skills to introduce new technology to Krystal and enabled us to send branded, HTML communications which could adapt to multiple devices.</q>
+                <p class="author">- Richard, Director of Training and Development</p>
+            </div>
+
+            <div class="myQuotes">
+                <h2>LinkedIn Recommendations</h2>
+                <q>I had the pleasure of working with Christine while I was the CMO at The Krystal Company. Internal and external communications are key to any large multi-retaill organization and I was very impressed with Christine's level of professionalism, her sense of urgency and more than anything her skill at drafting and executing the overall communication plan for the entire company. She has exceptional skills and would be a strong asset to any team.</q>
+                <p class="author">- Dominic, CMO & Vice President at America's Thrift Stores</p>
+            </div>
+
+            <!-- Next/prev buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <!-- Dots/bullets/indicators -->
+            <div class="dotContainer">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+            </div>
+        </div>
+    </section>
+
+    <div class="bottomBorder"> <img src="images/paint-footer.png" alt="paint border"></div>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <div class="footerConnect">
+                <h2>Let's Connect</h2>
+                <p>For any work collaborations, fan letters or even a simple chat, take the first step and reach out via e-mail or one of my social media profiles.</p>
+                <button class="contact">Let's Talk!</button>
+            </div>
+            <div class="footerSocial">
+                <h3>Find me on social media at:</h3>
+                <div class="footer-flex" id="behance">
+                    <img class="socialLabels" src="images/behance-white.svg" alt="behance logo">
+                    <p class="socialLabels">Behance</p>
+                </div>
+                <div class="footer-flex" id="linkedin">
+                    <img class="socialLabels linkedin" src="images/linkedin-white.svg" alt="linkedin logo">
+                    <p class="socialLabels">LinkedIn</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
