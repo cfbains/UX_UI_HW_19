@@ -102,7 +102,7 @@ hr {
   position: fixed;
   top: 0;
   width: 70%;
-  border-bottom: 2px solid #3E4C89;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
   transition: border 0.2s ease;
 }
 
@@ -414,7 +414,6 @@ hr {
   grid-template-rows: auto;
   grid-template-areas: 
     "image main";
-  box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
   transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
   border-bottom-left-radius: 25px;
   border-top-left-radius: 25px;
@@ -437,6 +436,8 @@ hr {
   overflow: hidden;
   border-bottom-left-radius: 25px;
   border-top-left-radius: 25px;
+  box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
+
   grid-area: image;
 }
 
@@ -448,6 +449,8 @@ hr {
   justify-content: center;
   flex-direction: column;
   grid-area: main;
+  box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
+
   margin-right: 15%;
 }
 

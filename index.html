@@ -7,16 +7,33 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <script src="scripts/quotes.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        ScrollReveal({ reset: true });
+    </script>
 </head>
 
 <body>
 
     <div class="topBorder"> <img src="images/paint-header.png" alt="paint border"> </div>
 
-<!-- Header bar with navigation links -->
+<!-- Header bar with navigation links and in-line JS -->
     <header>
         <div id="navback">
+            <script>
+                window.onscroll = function() {myFunction()};
+                
+                var navback = document.getElementById("navback");
+                var sticky = navback.offsetTop;
+                
+                function myFunction() {
+                  if (window.pageYOffset >= sticky) {
+                    navback.classList.add("sticky")
+                  } else {
+                    navback.classList.remove("sticky");
+                  }
+                }
+                </script>
             <nav id="navbar">
                 <div id="logo-div">
                     <a href="#">
@@ -33,20 +50,7 @@
                 </div>
             </nav>
             
-        <script>
-            window.onscroll = function() {myFunction()};
-            
-            var navback = document.getElementById("navback");
-            var sticky = navback.offsetTop;
-            
-            function myFunction() {
-              if (window.pageYOffset >= sticky) {
-                navback.classList.add("sticky")
-              } else {
-                navback.classList.remove("sticky");
-              }
-            }
-            </script>
+
         </div> 
     </header>
 
@@ -85,7 +89,13 @@
             <img id="right-arrow" src="images/polygon-right.png" alt="right arrow">
         </div>
         <div class="skillsBoxes">
-            <div id="languages" class="skillBox">
+
+            <script>
+                ScrollReveal().reveal('.skillsBoxes', { distance: '100px', origin:'bottom' });
+            </script>
+
+
+            <div id="languages" class="skillBox sb1">
                 <h3>Programming Languages</h3>
                 <ol>
                     <ul>HTML5</ul>
@@ -94,7 +104,10 @@
                     <ul>C++</ul>
                 </ol>
             </div>
-            <div id="software" class="skillBox">
+
+
+
+            <div id="software" class="skillBox sb2">
                 <h3>Essential Software</h3>
                 <ol>
                     <ul>Adobe Suite</ul>
@@ -108,7 +121,10 @@
                     <ul>Tableau</ul>
                 </ol>
             </div>
-            <div id="design" class="skillBox">
+
+
+
+            <div id="design" class="skillBox sb3">
                 <h3>Media Skills</h3>
                 <ol>
                     <ul>Page Layout & Composition</ul>
@@ -121,7 +137,10 @@
                     <ul>Contextual Design</ul>
                 </ol>
             </div>
-            <div id="business" class="skillBox">
+
+
+
+            <div id="business" class="skillBox sb4">
                 <h3>Business & Social Sciences Skills</h3>
                 <ol>
                     <ul>Business Metrics & Analytics</ul>
@@ -134,6 +153,9 @@
                     <ul>Persona Creation</ul>
                 </ol>
             </div>
+
+            
+
         </div>
     </section>
 
@@ -150,6 +172,12 @@
                     <button class="projectButton"> Learn More</button>
                 </div>
             </div>
+            <script>
+                ScrollReveal().reveal('.projectLeft', { distance: '150px', origin:'right' });
+                ScrollReveal().reveal('.projectRight', { distance: '150px', origin:'right' });
+            </script>
+
+
             <div class="individualProject">
                 <div class="projectLeft"><img src="images/casestudy2.webp" alt="Case Study 2"></div>
                 <div class="projectRight">
@@ -158,6 +186,12 @@
                     <button class="projectButton"> Learn More</button>
                 </div>
             </div>
+            <script>
+                ScrollReveal().reveal('.projectLeft', { distance: '150px', origin:'right', delay:'200' });
+                ScrollReveal().reveal('.projectRight', { distance: '150px', origin:'right', delay:'200' });
+            </script>
+
+
             <div class="individualProject">
                 <div class="projectLeft"><img src="images/casestudy3.jpeg" alt="Case Study 3"></div>
                 <div class="projectRight">
@@ -166,6 +200,12 @@
                     <button class="projectButton"> Learn More</button>
                 </div>
             </div>
+            <script>
+                ScrollReveal().reveal('.projectLeft', { distance: '150px', origin:'right', delay:'300' });
+                ScrollReveal().reveal('.projectRight', { distance: '150px', origin:'right', delay:'300' });
+            </script>
+
+
         </div>
     </div>
 
@@ -240,5 +280,9 @@
         </div>
     </footer>
 </body>
+
+    <!-- Scripts -->
+<script src="js/quotes.js"></script>
+
 
 </html>
