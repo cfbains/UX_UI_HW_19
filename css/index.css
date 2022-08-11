@@ -213,7 +213,7 @@ hr {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: nowrap;
 
   margin-top: 50px;
@@ -232,15 +232,18 @@ hr {
 .blast {
   height: 25px;
   width: 25px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .subhead-flex {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   flex-direction: row;
   flex-wrap: nowrap;
 }
+
 
 
 #hero-left {
@@ -258,12 +261,13 @@ hr {
 }
 
 #hero-right img {
-  object-fit: contain;
+  width: 40%;
   max-width: 90%;
-  float: right;
   border-radius: 25px;
   transform: rotate(5deg);
   z-index: 1;
+  margin-left: 50%;
+  margin-top: -5%;
 }
 
 .socialBar {
